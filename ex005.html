@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Números com JS</title>
+    <style></style>
+</head>
+<body>
+    <h1>Trabalhando com Números</h1>
+    <button class="button">Clique para calcular!</button>
+    <div class="resultado">O resultado vem aqui...</div>
+    <script>
+        alert('Seja bem-vindo ao site!')
+        const button = window.document.querySelector('.button')
+        const resultado = document.querySelector('.resultado')
+        function onClick(){
+            const num = prompt('Digite um número')
+            const double = num * 2
+            const half = num / 2 
+            resultado.innerHTML = `O dobro de ${num} é ${double} e a metade é ${half} `
+
+        }
+        button.addEventListener('click',() => onClick())       
+        
+    </script>
+</body>
+</html>
